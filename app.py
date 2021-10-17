@@ -2,9 +2,11 @@
 import sys
 import fire
 import questionary
+import csv
 from pathlib import Path
 
 from qualifier.utils.fileio import load_csv, save_csv
+
 
 from qualifier.utils.calculators import (
     calculate_monthly_debt_ratio,
