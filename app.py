@@ -1,4 +1,3 @@
-
 import sys
 import fire
 import questionary
@@ -105,7 +104,8 @@ def save_qualifying_loans(qualifying_loans):
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
     csvpath = Path('qualifying_loans.csv')
-    save_csv(csv_path, qualifying_loans)
+
+    save_csv(csvpath, qualifying_loans)
 
     answer = questionary.text("Would you like to print out a list of qualifying loans?").ask()
     message = "Thank you for using loan qualifier"
